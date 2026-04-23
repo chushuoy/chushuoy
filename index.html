@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chushuoy 的个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* 导航栏 */
+        nav {
+            background: #2c3e50;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #3498db;
+        }
+        /* 头部横幅（用渐变背景，不用图片） */
+        header {
+            height: 60vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .header-content h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .header-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+        }
+        /* 通用容器 */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        /* 关于我 */
+        .about {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            align-items: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .about-img {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+        .avatar-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+            margin: 0 auto;
+        }
+        .about-text {
+            flex: 2;
+            min-width: 280px;
+        }
+        .about-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+        /* 作品展示 */
+        .works {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .work-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        .work-card:hover {
+            transform: translateY(-5px);
+        }
+        .work-card-img {
+            width: 100%;
+            height: 200px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 1.2rem;
+        }
+        .work-info {
+            padding: 1.2rem;
+        }
+        .work-info h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        /* 联系方式 */
+        .contact {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .contact p {
+            font-size: 1.1rem;
+            margin: 0.8rem 0;
+        }
+        /* 底部 */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航 -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">chushuoy 的主页</div>
+        <div class="nav-menu">
+            <a href=" ">关于我</a >
+            <a href="#works">我的作品</a >
+            <a href="#contact">联系我</a >
+        </div>
+    </div>
+</nav>
+
+<!-- 头部横幅 -->
+<header>
+    <div class="header-content">
+        <h1>你好，我是 chushuoy</h1>
+        <p>热爱生活，记录美好，专注创作与分享</p >
+    </div>
+</header>
+
+<!-- 关于我 -->
+<div class="container" id="about">
+    <h2 class="section-title">关于我</h2>
+    <div class="about">
+        <div class="about-img">
+            <div class="avatar-circle">😊</div>
+        </div>
+        <div class="about-text">
+            <h3>自我介绍</h3>
+            <p>这里可以写你的个人简介、爱好特长、专业方向、性格特点等内容。简单真诚地介绍自己，让访问者快速了解你。</p >
+            <br>
+            <p>喜欢设计、编程、摄影、写作，用心对待每一件事，期待与同频的人相遇交流。</p >
+        </div>
+    </div>
+</div>
+
+<!-- 作品展示 -->
+<div class="container" id="works">
+    <h2 class="section-title">我的作品</h2>
+    <div class="works">
+        <div class="work-card">
+            <div class="work-card-img">作品图片占位</div>
+            <div class="work-info">
+                <h4>作品标题一</h4>
+                <p>作品简单描述，可写设计理念、内容简介等。</p >
+            </div>
+        </div>
+        <div class="work-card">
+            <div class="work-card-img">作品图片占位</div>
+            <div class="work-info">
+                <h4>作品标题二</h4>
+                <p>作品简单描述，可写设计理念、内容简介等。</p >
+            </div>
+        </div>
+        <div class="work-card">
+            <div class="work-card-img">作品图片占位</div>
+            <div class="work-info">
+                <h4>作品标题三</h4>
+                <p>作品简单描述，可写设计理念、内容简介等。</p >
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 联系方式 -->
+<div class="container" id="contact">
+    <h2 class="section-title">联系我</h2>
+    <div class="contact">
+        <p>📧 邮箱：yourname@example.com</p >
+        <p>📱 微信：your_wechat_id</p >
+        <p>📍 城市：中国 · 某某城市</p >
+    </div>
+</div>
+
+<!-- 底部 -->
+<footer>
+    <p>&copy; 2026 chushuoy 的个人主页</p >
+</footer>
+
+</body>
+</html>
